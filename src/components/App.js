@@ -11,11 +11,8 @@ import SiteFooter from '../library/common/components/SiteFooter';
 
 const App = () => {
 
-  const APP_MODE = process.env.APP_MODE;
-  const SITE_URI = APP_MODE==='dev' ? '/' : '/react-webpack/';
-
   return (
-    <Router basename={SITE_URI}> {/* to run in subfolder and in htdocs */}
+    <Router>
         <SiteHeader/>
         <Switch>
             <Route exact path="/" component={Home} />

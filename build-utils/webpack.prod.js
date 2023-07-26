@@ -10,7 +10,7 @@ const config = {
   },
   output: {
     filename: 'static/[name].[hash].js',
-    publicPath: 'http://localhost/react-webpack/'
+    //publicPath: 'http://localhost/react-webpack/'
   },
   devtool: 'source-map',
   module: {

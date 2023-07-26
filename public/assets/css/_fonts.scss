@@ -1,0 +1,34 @@
+@import 'variables';
+
+@mixin fontPoppins($font) {
+    font-family: "Poppins "+$font;
+}
+
+@mixin fontMontserrat($font) {
+    font-family: "Montserrat "+$font;
+}
+
+@mixin fontGotham($font) {
+    font-family: "Gotham "+$font;
+}
+
+$fontFamilies: 'light', 'regular', 'medium', 'bold', 'black', 'thin';
+@each $ff in $fontFamilies {
+	.font-poppins-#{$ff}{ @include fontPoppins(#{$ff}); }
+}
+
+@each $fs in $fontSizes {
+	.fs-#{$fs} { font-size: #{$fs}px; }
+	.fs-#{$fs}-important { font-size: #{$fs}px !important; }
+}
+
+
+$fontFamilies: 'light', 'bold', 'semibold', 'medium', 'extralight', 'extrabold';
+@each $ff in $fontFamilies {
+	.font-montserrat-#{$ff}{ @include fontMontserrat(#{$ff}); }
+}
+
+$fontFamilies: 'light', 'book', 'medium', 'bold', 'black';
+@each $ff in $fontFamilies {
+	.font-gotham-#{$ff}{ @include fontGotham(#{$ff}); }
+}

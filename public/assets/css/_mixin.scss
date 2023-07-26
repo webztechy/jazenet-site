@@ -1,0 +1,53 @@
+@mixin ellipsis($line) {
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+}
+
+@mixin transition($delay) {
+    -webkit-transition: all $delay ease;
+    -moz-transition: all $delay ease;
+    -o-transition: all $delay ease;
+    transition: all $delay ease;
+}
+
+
+@mixin d-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin scrollnone(){
+
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
+
+	&::-webkit-scrollbar {
+	   width: 0px;  /* remove scrollbar space */
+	   background: transparent;  /* optional: just make scrollbar invisible */
+        //    display: none;
+	}
+	/* optional: show position indicator in red */
+	&::-webkit-scrollbar-thumb {
+	   background: transparent;
+	}
+}
+
+@mixin scroll-colored( $color : $color-theme-grey ){
+
+	&::-webkit-scrollbar {
+	   width: 5px; 
+	   background: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+	   background: $color;
+       border-radius: 10px;
+	}
+}

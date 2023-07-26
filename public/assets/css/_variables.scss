@@ -1,0 +1,67 @@
+@import 'mixin';
+
+$color-black: #000000;
+$color-real-black : #000000;
+$color-white: #ffffff;
+$color-real-white : #ffffff;
+$color-primary: #FB4551;
+$color-dark: #4A4A4A;
+$color-dark-2: #212121;
+$color-dark-3: #151515;
+$color-grey: #888888;
+$color-grey-2: #434343;
+
+$color-border-input: #B5B7B9;
+$color-theme-gray : #F2F2F2;
+$color-theme-green: #1CA990;
+$color-input-checked-green : #27ae61;
+$color-input-checked-gray : #F2F2F2;
+$color-border-input-error: #c10000;
+$color-input-radio-grey : #747474;
+
+$fontSizes: 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 55,60,65,70,75,80,85,90,95,100;
+
+$large-min-height: 800px;
+
+// 1400 / 1921 / 2560
+$large-device-starting-point : 1400;
+
+:root {
+    --fs-11 : 11px;
+    --fs-12 : 12px;
+    --fs-13 : 13px;
+    --fs-14 : 14px;
+    --fs-15 : 15px;
+    --fs-16 : 16px;
+    --fs-17 : 17px;
+    --fs-18 : 18px;
+    --fs-19 : 19px;
+    --fs-20 : 20px;
+    --fs-21 : 21px;
+    --fs-22 : 22px;
+    --fs-23 : 23px;
+    --fs-24 : 24px;
+    --fs-25 : 25px;
+    --fs-26 : 26px;
+    --fs-27 : 27px;
+    --fs-28 : 28px;
+    --fs-29 : 29px;
+    --fs-30 : 30px;
+
+    --body-font-size : 14px;
+    --header-height: 50px;
+    --form-input-font-size : 14px;
+    --form__button-height: 45px;
+    --form__button-radius: 25px;
+
+    --jazenet-logo-width: 170px;
+    --list-style-icon-1-width: 35px;
+
+}
+
+@mixin d-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

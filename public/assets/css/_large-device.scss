@@ -1,0 +1,305 @@
+//@import 'variables';
+
+@media (min-width: 359px){
+    .container, .container-md, .container-sm {
+        max-width: 90%;
+    }
+
+}
+
+@media (min-width: 576px){
+    .container, .container-md, .container-sm {
+        max-width: 90%;
+    }
+
+}
+
+@media (min-width: 768px){
+    .list-style-icon-1{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        border-top: 0;
+        
+        > li{
+            border-left: 1px solid $color-white;
+            border-bottom: 0;
+            display: block;
+
+            &:first-child{
+                border-left: 0;
+            }
+
+            img{ width: 40px;}
+        }
+    }
+
+    .list-style-labelled-1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+        > li:nth-child(even){
+          border-left: 1px solid  $color-dark;;
+        }
+
+        > li:last-child{ border-bottom: 1px solid $color-dark; }
+      
+    }
+
+    .container, .container-md, .container-sm {
+        max-width: 90%;
+    }
+
+    :root {
+        --jazenet-logo-width: 229px !important;
+    }
+
+    .jazenet-logo-footer{
+        width: 120px;
+    }
+
+    .list-style-icon-2{
+        > li{
+            img{  width: 73px;  }
+
+            > a{
+                justify-content: left;
+                padding-right: 55px;
+                position: relative;
+
+                &::after{
+                    content: '';
+                    display: block;
+                    background-image: url('../img/icons/white-outline-circle-arrow-right.svg');
+                    background-position: center;
+                    background-size: contain;
+                    width: 44px;
+                    height: 44px;
+                    position: absolute;
+                    right: 0;
+                }
+            }
+
+            > a, a:hover{
+             @include fontPoppins('Medium');
+            }
+
+        }
+    }
+
+    .jazenet-numbers{
+
+        .section-content{
+            position: relative;
+            background-color: transparent !important;
+
+            &:nth-child(odd)::after{
+                content: '';
+                display: block;
+                height: 100%;
+                width: 50%;
+                background-color: $color-dark-3;
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: -1;
+            
+            }
+
+            &:nth-child(odd) .numbering-col{
+                justify-content: end;
+            }
+
+            &:nth-child(even)::before{
+                content: '';
+                display: block;
+                height: 100%;
+                width: 50%;
+                background-color: $color-dark-2;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            
+            }
+
+            &:nth-child(even) .row{
+                flex-direction: row-reverse;
+            }
+            
+
+            &:nth-child(3)::after{
+                background-color: $color-grey-2;
+            }
+
+            .number-letter{
+                @include fontPoppins('Bold');
+                font-size: 150px; 
+            }
+
+            img{ width:  114px;}
+
+            .number-item{
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+}
+
+
+@media (min-width:992px){
+    .list-style-icon-1{
+        border-right: 1px solid $color-white;
+
+        > li:first-child{
+            border-left: 1px solid $color-white;
+
+            img{ width: 50px;}
+        }
+    }
+
+    .list-style-labelled-1{
+        //display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        
+        > li{
+          border-left: 1px solid  $color-dark;;
+          
+          &:first-child{ border-left: 0;}
+        }
+    }
+
+    .jazenet-numbers{
+        .section-content{
+
+           
+
+            .numbering{
+                font-size: 200px;
+            }
+
+            &:nth-child(odd){
+                &::after{ width: 40%; }
+
+                .section-main-icon{
+                    position: absolute;
+                    padding-bottom: 80px;
+                    bottom: 0;
+                    right: 0;
+                    width: 40%;
+
+                    img{
+                        position: relative;
+                        left: -84px;
+                    }
+                }
+            }
+            
+            &:nth-child(even){
+                &::before{
+                    width: 40%;
+                    top: -25%;
+                }
+
+                .number-letter{
+                    position: relative;
+                    top: -32%;
+                }
+
+                .section-main-icon{
+                    position: absolute;
+                    padding-top: 75px;
+                    top: 0;
+                    left: 0;
+                    width: 40%;
+                    justify-content: end;
+
+                    img{
+                        position: relative;
+                        right: -84px;
+                    }
+                }
+            }
+
+            img{ width:  169px;}
+        }
+    }
+
+    .circle-arrow-down{
+        width: 60px;
+      }
+      
+
+    
+}
+
+
+ /*****************************************************************************************
+ * FONT SIZE
+ *****************************************************************************************/
+
+
+// 1400px / 2560px
+@media (min-width: #{$large-device-starting-point}px){
+
+    :root {
+        --fs-11 : 13px;
+        --fs-12 : 14px;
+        --fs-13 : 15px;
+        --fs-14 : 16px;
+        --fs-15 : 17px;
+        --fs-16 : 18px;
+        --fs-17 : 19px;
+        --fs-18 : 20px;
+        --fs-19 : 21px;
+        --fs-20 : 22px;
+        --fs-21 : 23px;
+        --fs-22 : 24px;
+        --fs-23 : 25px;
+        --fs-24 : 26px;
+        --fs-25 : 27px;
+        --fs-26 : 28px;
+        --fs-27 : 29px;
+        --fs-28 : 30px;
+        --fs-29 : 31px;
+        --fs-30 : 32px;
+
+        --body-font-size : 16px !important;
+        --header-height: 61px !important;
+        --form-input-font-size : 18px !important;
+        --form__button-height: 50px !important;
+        --form__button-radius: 30px !important;
+
+        --jazenet-logo-width: 289px !important;
+        --list-style-icon-1-width: 50px !important;
+    }
+
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1280px;
+    }
+}
+
+
+@media (max-width: #{$large-device-starting-point - 1}px){
+    @each $fs in $fontSizes {
+        .fs-#{$fs} { font-size: #{$fs - 4}px; }
+        //.fs-#{$fs}-important { font-size: #{$fs - 4}px !important; }
+    }
+    
+}
+
+
+@media (max-width: 992px){
+    @each $fs in $fontSizes {
+        .fs-md-#{$fs} { font-size: #{$fs - 2}px; }
+        //.fs-md-#{$fs}-important { font-size: #{$fs - 2}px !important; }
+    }
+
+}
+
+@media (max-width: 768px){
+    @each $fs in $fontSizes {
+        .fs-sm-#{$fs} { font-size: #{$fs - 6}px; }
+        //.fs-sm-#{$fs}-important { font-size: #{$fs - 2}px !important; }
+    }
+}

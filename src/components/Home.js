@@ -38,7 +38,7 @@ const Home = () => {
         }else{
           scrollToTopBtn.addClass('d-none');
         }
-
+       
     });
 
 

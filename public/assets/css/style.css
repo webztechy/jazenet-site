@@ -1,3 +1,57 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 :root {
   --fs-11: 11px;
   --fs-12: 12px;
@@ -21,13 +75,42 @@
   --fs-30: 30px;
   --body-font-size: 14px;
   --header-height: 50px;
+  --button-height: 50px;
   --form-input-font-size: 14px;
   --form__button-height: 45px;
   --form__button-radius: 25px;
+  --fs-modal-confirm-botton: 14px;
   --jazenet-logo-width: 170px;
   --list-style-icon-1-width: 35px;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 :root {
   --fs-11: 11px;
   --fs-12: 12px;
@@ -51,9 +134,11 @@
   --fs-30: 30px;
   --body-font-size: 14px;
   --header-height: 50px;
+  --button-height: 50px;
   --form-input-font-size: 14px;
   --form__button-height: 45px;
   --form__button-radius: 25px;
+  --fs-modal-confirm-botton: 14px;
   --jazenet-logo-width: 170px;
   --list-style-icon-1-width: 35px;
 }
@@ -550,6 +635,33 @@
   font-family: "Gotham black";
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 :root {
   --fs-11: 11px;
   --fs-12: 12px;
@@ -573,9 +685,11 @@
   --fs-30: 30px;
   --body-font-size: 14px;
   --header-height: 50px;
+  --button-height: 50px;
   --form-input-font-size: 14px;
   --form__button-height: 45px;
   --form__button-radius: 25px;
+  --fs-modal-confirm-botton: 14px;
   --jazenet-logo-width: 170px;
   --list-style-icon-1-width: 35px;
 }
@@ -813,7 +927,7 @@
 .form-theme .form-group .form-control:not(:-moz-placeholder-shown) ~ label, .form-theme .form-group .form-input:not(:-moz-placeholder-shown) ~ label {
   transform: translate(0, -15px) !important;
   font-size: 10px !important;
-  color: #1CA990;
+  color: #FB4551;
   z-index: 1;
   background-color: #ffffff;
 }
@@ -822,7 +936,7 @@
 .form-theme .form-group .form-input:focus ~ label {
   transform: translate(0, -15px) !important;
   font-size: 10px !important;
-  color: #1CA990;
+  color: #FB4551;
   z-index: 1;
   background-color: #ffffff;
 }
@@ -889,12 +1003,12 @@
   color: #000000;
 }
 .form-theme.form-theme-dark .form-control:not(:-moz-placeholder-shown) ~ label, .form-theme.form-theme-dark .form-input:not(:-moz-placeholder-shown) ~ label {
-  color: #000000;
+  color: #FB4551;
 }
 .form-theme.form-theme-dark .form-control:not(:placeholder-shown) ~ label, .form-theme.form-theme-dark .form-control:focus ~ label,
 .form-theme.form-theme-dark .form-input:not(:placeholder-shown) ~ label,
 .form-theme.form-theme-dark .form-input:focus ~ label {
-  color: #000000;
+  color: #FB4551;
 }
 .form-theme.form-theme-dark .form-group-mobile .dropdown-country-selection.show-arrow .dropdown-toggle::after {
   filter: invert(1);
@@ -1032,6 +1146,149 @@ input[type=radio].checkbox-radio-default:focus,
 .checkbox-radio-default input[type=radio]:focus,
 .checkbox-radio-default input[type=checkbox]:focus {
   outline: none;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+:root {
+  --fs-11: 11px;
+  --fs-12: 12px;
+  --fs-13: 13px;
+  --fs-14: 14px;
+  --fs-15: 15px;
+  --fs-16: 16px;
+  --fs-17: 17px;
+  --fs-18: 18px;
+  --fs-19: 19px;
+  --fs-20: 20px;
+  --fs-21: 21px;
+  --fs-22: 22px;
+  --fs-23: 23px;
+  --fs-24: 24px;
+  --fs-25: 25px;
+  --fs-26: 26px;
+  --fs-27: 27px;
+  --fs-28: 28px;
+  --fs-29: 29px;
+  --fs-30: 30px;
+  --body-font-size: 14px;
+  --header-height: 50px;
+  --button-height: 50px;
+  --form-input-font-size: 14px;
+  --form__button-height: 45px;
+  --form__button-radius: 25px;
+  --fs-modal-confirm-botton: 14px;
+  --jazenet-logo-width: 170px;
+  --list-style-icon-1-width: 35px;
+}
+
+.react-confirm-alert-overlay {
+  z-index: 1111 !important;
+  background: rgba(0, 0, 0, 0.8196078431) !important;
+  font-family: "Gotham Book";
+  text-transform: lowercase;
+  animation: react-confirm-alert-fadeIn 0.2s 0.2s forwards;
+  /* 
+  &.warning h1,
+  &.warning h2,
+  &.error h1,
+  &.error h2{
+      color: $color-red-light;
+  } */
+}
+.react-confirm-alert-overlay h1, .react-confirm-alert-overlay h2 {
+  font-size: var(--fs-18);
+  padding-bottom: 10px;
+  font-family: "Gotham Medium";
+}
+.react-confirm-alert-overlay .react-confirm-alert-body {
+  border-radius: 16px !important;
+  text-align: center;
+  font-family: "Gotham Book";
+  font-size: var(--fs-16);
+  color: #000000 !important;
+  width: 550px !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  line-height: 1.3;
+}
+.react-confirm-alert-overlay .react-confirm-alert-button-group > button {
+  border-radius: 0 !important;
+  padding: 12px 10px !important;
+  font-family: "Gotham Bold";
+  font-size: var(--fs-modal-confirm-botton);
+  min-width: 135px;
+  text-transform: lowercase;
+  width: 49%;
+  height: var(--button-height);
+  margin-right: 1px;
+  position: relative;
+  background: #000000;
+}
+.react-confirm-alert-overlay .react-confirm-alert-button-group > button:first-child {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+}
+.react-confirm-alert-overlay .react-confirm-alert-button-group > button:last-child {
+  margin-right: 0;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
+.react-confirm-alert-overlay .react-confirm-alert-button-group {
+  margin-top: 50px !important;
+  justify-content: center;
+}
+.react-confirm-alert-overlay .react-confirm-alert-button-group > button:only-child {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 4px !important;
+}
+.react-confirm-alert-overlay.normal-font-style .react-confirm-alert-body {
+  font-family: "Gotham Book";
+}
+.react-confirm-alert-overlay.warning-message .react-confirm-alert-body > h1 {
+  color: #F85B60;
+}
+.react-confirm-alert-overlay.no-title .react-confirm-alert-body > h1 {
+  display: none;
+}
+.react-confirm-alert-overlay.warning-account-deactivate .react-confirm-alert-body {
+  font-size: var(--fs-16);
+}
+
+.react-confirm-alert-svg {
+  display: none;
 }
 
 /*****************************************************************************************
@@ -1277,6 +1534,29 @@ header nav.main-nav a, header nav.main-nav a:hover {
   z-index: 1;
 }
 
+.button-has-loader {
+  position: relative;
+}
+.button-has-loader:disabled {
+  opacity: 0.9;
+}
+.button-has-loader::after {
+  content: "\f29c";
+  font-family: "Ionicons";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  right: 15px;
+  top: 48%;
+  opacity: 0;
+}
+.button-has-loader.animate::after {
+  opacity: 1;
+  animation: spinning 0.4s linear infinite;
+}
+
 /*****************************************************************************************
 * RESPONSIVE
 *****************************************************************************************/
@@ -1485,14 +1765,21 @@ header nav.main-nav a, header nav.main-nav a:hover {
     --fs-30: 32px;
     --body-font-size: 16px !important;
     --header-height: 61px !important;
+    --button-height: 60px !important;
     --form-input-font-size: 18px !important;
     --form__button-height: 50px !important;
     --form__button-radius: 30px !important;
+    --fs-modal-confirm-botton: 18px !important;
     --jazenet-logo-width: 289px !important;
     --list-style-icon-1-width: 50px !important;
   }
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1280px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .react-confirm-alert-overlay .react-confirm-alert-body {
+    width: 100% !important;
   }
 }
 @media (max-width: 1399px) {
@@ -1978,6 +2265,33 @@ header nav.main-nav a, header nav.main-nav a:hover {
     font-size: 94px;
   }
 }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 :root {
   --fs-11: 11px;
   --fs-12: 12px;
@@ -2001,9 +2315,11 @@ header nav.main-nav a, header nav.main-nav a:hover {
   --fs-30: 30px;
   --body-font-size: 14px;
   --header-height: 50px;
+  --button-height: 50px;
   --form-input-font-size: 14px;
   --form__button-height: 45px;
   --form__button-radius: 25px;
+  --fs-modal-confirm-botton: 14px;
   --jazenet-logo-width: 170px;
   --list-style-icon-1-width: 35px;
 }

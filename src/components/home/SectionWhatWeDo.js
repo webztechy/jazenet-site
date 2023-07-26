@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import SiteContainer from "../../library/common/layouts/SiteContainer";
 
 import { showContactForm } from '../../library/redux/actions';
+import Utilities from '../../library/helpers/Utilities';
 
 const ASSET_IMG = process.env.REACT_APP_img_folder;
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Utilities from '../../helpers/Utilities';
+import { sendContact } from '../../api/SendEmails';
 
 const ContactForm = ( props ) => {
 
@@ -33,7 +34,7 @@ const ContactForm = ( props ) => {
         
     }
 
-    const handleSubmitSendContact = async () => {
+    const handleSubmitSendContact = async () =>  {
 
         Utilities.elementDisabledStatus(button_name, false );
 
@@ -55,7 +56,7 @@ const ContactForm = ( props ) => {
     
         if ( errorCounter>0 ){  return false; }
 
-         /*  const emailContentMessageHtml = `
+         const emailContentMessageHtml = `
                                         <p>Name: ${formValues.name}</p>
                                         <p>Email: ${formValues.email}</p>
                                         <p>Message: </p>
@@ -64,31 +65,34 @@ const ContactForm = ( props ) => {
 
         const passVal = {
             subject : "web - contact us",
-            name : formValues.name,
-            to_email : "support@beonchat.com",
+            from_email: formValues.email.toString(),
+            name : formValues.name.toString(),
+            to_email : "contact@jazenet.com",
             message : emailContentMessageHtml
         }
         
 
-      Utilities.elementDisabledStatus(button_name, true );
-        
+        Utilities.elementDisabledStatus(button_name, true );
+            
+        const unableMsg = `unable to send detail`;
         const responseDetail = await sendContact( passVal );
-        console.log(responseDetail);
+       
+       // console.log(responseDetail);
         
         Utilities.elementDisabledStatus(button_name, false );
         if ( Object.keys(responseDetail).length===0 ){
-            Utilities.messagePopup('error', TitlesLabels.general.title_unableToSendDetail)
+            Utilities.messagePopup('error', unableMsg);
 
             return false;
         }
 
         if ( parseInt(responseDetail.status)===0 ){
-            Utilities.messagePopup('error', TitlesLabels.general.title_unableToSendDetail)
+            Utilities.messagePopup('error', unableMsg);
 
         }else{
-            Utilities.messagePopup('success', TitlesLabels.general.title_detailHasBeenSent)
+            Utilities.messagePopup('success',  `your message has been successfully sent!`)
             setFormValues(defaultFormValues);
-        } */
+        }  
 
     }
 
@@ -110,7 +114,7 @@ const ContactForm = ( props ) => {
 
 
             <div className="mt-5">
-                    <button type='button' id={button_name} className='btn-theme-dark col-6 col-md-3 col-lg- mx-auto' onClick={ () => handleSubmitSendContact() }>submit</button>
+                    <button type='button' id={button_name} className='btn-theme-dark col-6 col-md-3 col-lg- mx-auto button-has-loader' onClick={ () => handleSubmitSendContact() }>submit</button>
             </div>
 
         </form>

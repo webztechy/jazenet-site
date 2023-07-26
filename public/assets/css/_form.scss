@@ -242,7 +242,7 @@
                 ~label {
                     transform: translate(0, -15px) !important;
                     font-size: 10px !important;
-                    color: $color-theme-green;
+                    color: $color-primary;
                     z-index: 1;
                     background-color: $color-real-white;
                 }
@@ -331,7 +331,7 @@
             &:not(:placeholder-shown),
             &:focus {
                 ~label {
-                    color: $color-real-black;
+                    color: $color-primary;
                 }
             }
         }

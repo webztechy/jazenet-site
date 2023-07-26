@@ -1,7 +1,7 @@
 import React from 'react';
-
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
 
+import 'react-confirm-alert/src/react-confirm-alert.css';
 
 import Home from './Home';
 

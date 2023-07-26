@@ -24,7 +24,6 @@ const SectionReady = () => {
             Utilities.scrollToSection(`contact`);
         }, 200);
         
-   
     }
 
     useEffect( () => {

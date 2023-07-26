@@ -266,9 +266,12 @@
 
         --body-font-size : 16px !important;
         --header-height: 61px !important;
+        --button-height : 60px !important;
         --form-input-font-size : 18px !important;
         --form__button-height: 50px !important;
         --form__button-radius: 30px !important;
+
+        --fs-modal-confirm-botton : 18px !important;
 
         --jazenet-logo-width: 289px !important;
         --list-style-icon-1-width: 50px !important;
@@ -279,6 +282,12 @@
     }
 }
 
+@media screen and ( max-width: 576px ){
+    .react-confirm-alert-overlay .react-confirm-alert-body{
+        width: 100% !important;
+    }
+    
+}
 
 @media (max-width: #{$large-device-starting-point - 1}px){
     @each $fs in $fontSizes {

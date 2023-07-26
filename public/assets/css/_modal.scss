@@ -1,0 +1,97 @@
+@import 'variables';
+
+.react-confirm-alert-overlay{
+    z-index: 1111 !important;
+    background: $modal-backdrop-color !important;
+    @include fontGotham('Book');
+    text-transform: lowercase;
+    -webkit-animation: react-confirm-alert-fadeIn 0.2s 0.2s forwards;
+    -moz-animation: react-confirm-alert-fadeIn 0.2s 0.2s forwards;
+    -o-animation: react-confirm-alert-fadeIn 0.2s 0.2s forwards;
+    animation: react-confirm-alert-fadeIn 0.2s 0.2s forwards;
+    
+    h1,h2{
+        font-size: var(--fs-18);
+        padding-bottom: 10px;
+        @include fontGotham('Medium');
+    }
+
+    /* 
+    &.warning h1,
+    &.warning h2,
+    &.error h1,
+    &.error h2{
+        color: $color-red-light;
+    } */
+
+    .react-confirm-alert-body{
+        border-radius: $border-radius-popup !important;
+        text-align: center;
+        @include fontGotham('Book');
+        font-size: var(--fs-16);
+        color: $color-real-black !important;
+        width: 550px !important;
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        line-height: 1.3;
+    }
+
+    .react-confirm-alert-button-group > button{
+        border-radius: 0 !important;
+        padding: 12px 10px !important;
+        @include fontGotham('Bold');
+        font-size: var(--fs-modal-confirm-botton);
+        min-width: 135px;
+        text-transform: lowercase;
+        width: 49%;
+        height: var(--button-height);
+        margin-right: 1px;
+        position: relative;
+        background: $color-real-black;
+        
+        &:first-child{
+            border-top-right-radius: 0 !important;
+            border-bottom-right-radius: 0  !important;
+            border-top-left-radius: $btn-radius !important;
+             border-bottom-left-radius: $btn-radius !important;
+       }
+        &:last-child{
+             margin-right: 0;
+             border-top-left-radius: 0 !important;
+             border-bottom-left-radius: 0 !important;
+             border-top-right-radius: $btn-radius !important;
+             border-bottom-right-radius: $btn-radius !important;
+        }
+    }
+
+    .react-confirm-alert-button-group{
+        margin-top: 50px !important;
+        justify-content: center;
+
+        > button:only-child{
+            width: 100%;
+            margin: 0 auto;
+            border-radius: $btn-radius !important;
+        }
+    }
+
+    &.normal-font-style{
+        .react-confirm-alert-body{
+            @include fontGotham('Book');
+        }
+    }
+
+    &.warning-message .react-confirm-alert-body > h1{
+        color: $color-theme-red;
+    }
+
+    &.no-title  .react-confirm-alert-body>h1{ display: none; }
+
+    &.warning-account-deactivate .react-confirm-alert-body{
+        font-size: var(--fs-16);
+    }
+}
+
+.react-confirm-alert-svg{ display: none;}

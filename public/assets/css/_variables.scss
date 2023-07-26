@@ -19,6 +19,13 @@ $color-input-checked-gray : #F2F2F2;
 $color-border-input-error: #c10000;
 $color-input-radio-grey : #747474;
 
+$modal-backdrop-color: #000000d1;
+$modal-app-radius: 8px;
+$border-radius-popup: 16px;
+$border-radius-loaders: 16px;
+$btn-radius: 4px;
+$color-theme-red : #F85B60;
+
 $fontSizes: 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 55,60,65,70,75,80,85,90,95,100;
 
 $large-min-height: 800px;
@@ -50,10 +57,13 @@ $large-device-starting-point : 1400;
 
     --body-font-size : 14px;
     --header-height: 50px;
+    --button-height : 50px;
     --form-input-font-size : 14px;
     --form__button-height: 45px;
     --form__button-radius: 25px;
 
+    --fs-modal-confirm-botton : 14px;
+    
     --jazenet-logo-width: 170px;
     --list-style-icon-1-width: 35px;
 

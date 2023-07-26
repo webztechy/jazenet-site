@@ -16,7 +16,7 @@ const SectionUnlock = () => {
     }
 
     return(
-        <section id="unlock" className='jazenet-unlock bordered-top-grey section-point bg-theme-black'>
+        <section id="unlock" className='jazenet-unlock bordered-top-grey section-point position-relative z-index-1 bg-theme-black'>
             <div className='section-content'>
                 <SiteContainer className="d-flex align-items-center justify-content-center position-relative  py-5 text-center text-lg-start">
                     <div className='row py-3 py-md-5'>

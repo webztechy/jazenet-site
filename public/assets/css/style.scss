@@ -2,6 +2,7 @@
 @import 'variables';
 @import 'fonts';
 @import 'form';
+@import 'modal';
 
 
 /*****************************************************************************************
@@ -227,6 +228,28 @@ header{
 
 .cursor-pointer{ cursor: pointer; };
 .z-index-1{ z-index: 1;}
+
+
+.button-has-loader{
+  position: relative;
+
+  &:disabled{  opacity: 0.9; }
+
+  &::after{
+      content: "\f29c";
+      font-family: 'Ionicons';
+      @include d-flex-center;
+      position: absolute;
+      right: 15px;
+      top: 48%;
+      opacity: 0;
+  }
+
+  &.animate::after{
+      opacity: 1;
+      animation: spinning 0.4s linear infinite;
+  }
+}
 
  /*****************************************************************************************
  * RESPONSIVE

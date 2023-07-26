@@ -34,13 +34,13 @@ const config = {
               },
               {
                 loader: 'css-loader',
-                options: {
+                /* options: {
                     modules : {
                         namedExport : true, 
                         exportLocalsConvention : "camelCaseOnly",
                     },
                     
-                }
+                } */
               }
             ]
           }

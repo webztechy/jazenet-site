@@ -34,11 +34,11 @@ const SectionJazenet = ( props ) => {
                         <div className='py-2 py-md-0'></div>
                        
                         <ul className='font-poppins-medium fs-16  fs-md-16 list-style-icon-1'>
-                            <ListItems icon={`white-outline-web-app.svg`}>Web App Development</ListItems>
-                            <ListItems icon={`white-outline-mobile-app.svg`}>Mobile App Development</ListItems>
-                            <ListItems icon={`white-outline-software.svg`}>Software Integration</ListItems>
-                            <ListItems icon={`white-outline-custom-app.svg`}>Custom Software Development </ListItems>
-                            <ListItems icon={`white-outline-ui.svg`}>UI / UX Design</ListItems>
+                            <ListItems icon={`white-outline-web-app.svg`} sectionId={`do-web-app`}>Web App Development</ListItems>
+                            <ListItems icon={`white-outline-mobile-app.svg`} sectionId={`do-mobile-app`}>Mobile App Development</ListItems>
+                            <ListItems icon={`white-outline-software.svg`} sectionId={`do-software`}>Software Integration</ListItems>
+                            <ListItems icon={`white-outline-custom-app.svg`} sectionId={`do-custom-software`}>Custom Software Development </ListItems>
+                            <ListItems icon={`white-outline-ui.svg`} sectionId={`do-ui`}>UI / UX Design</ListItems>
                         </ul>
 
                         <div className='d-flex align-items-center justify-content-end d-sm-none pt-4'>
@@ -58,7 +58,14 @@ export default SectionJazenet;
 
 
 const ListItems = ( props ) => {
+
+    const scrollTo = ( keyName = "" ) => {
+        if ( keyName!=="" ){
+            Utilities.scrollToSection(keyName);
+        }
+    }
+
     return(
-        <li className='py-2 py-md-0  py-lg-2 px-md-4'><img src={`${ASSET_IMG}/icons/${props.icon}`}/><div className='mt-md-3'>{props.children}</div></li>
+        <li className='py-2 py-md-0  py-lg-2 px-md-4 cursor-pointer' onClick={ () => scrollTo(props.sectionId) }><img src={`${ASSET_IMG}/icons/${props.icon}`}/><div className='mt-md-3'>{props.children}</div></li>
     );
 }

@@ -28,7 +28,7 @@ const SiteFooter = ( props ) => {
 
             <div>
                 <SiteContainer className="py-4">
-                    <div className='text-center fs-13 fs-md-12'>&copy; {  new Date().getFullYear() } {SITE_TITLE}. All rights reserved.</div>
+                    <div className='text-center fs-13 fs-md-12'>&copy; {  new Date().getFullYear() } Jazenet Holdings Pte. ltd, Singapore. All rights reserved.</div>
                 </SiteContainer>
             </div>
         </div>

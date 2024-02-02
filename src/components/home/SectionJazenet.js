@@ -13,7 +13,7 @@ const SectionJazenet = ( props ) => {
     const htmlArrowDown = <button type="button"><img src={`${ASSET_IMG}/icons/pink-circle-arrow-down.svg`} className='circle-arrow-down' onClick={ () => handleClickArrow() }/></button>
 
     return (
-        <section id="jazenet" className='jazenet-info bordered-top-grey section-point position-relative z-index-1'>
+        <section id="home" className='jazenet-info bordered-top-grey section-point position-relative z-index-1'>
 
             <div className='section-content'>
                 <SiteContainer className="d-flex align-items-end justify-content-center text-center position-relative  pt-5 pb-4 pb-md-5">

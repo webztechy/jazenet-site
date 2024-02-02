@@ -51,7 +51,7 @@ const config = {
       new dotenv({  path: `${commonPaths.utitiesPath}/.env.dev` })
     ],
     devServer: {
-      host: '192.168.1.143', //'localhost',
+      host: 'localhost', //'192.168.1.143', //'localhost',
       port: port,
       historyApiFallback: true,
       hot: true,

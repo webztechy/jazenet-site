@@ -13,11 +13,13 @@ const App = () => {
 
   return (
     <Router>
-        <SiteHeader/>
+      <SiteHeader />
+      <div className='body-content'>
         <Switch>
-            <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Home} />
         </Switch>
-        <SiteFooter />
+      </div>
+      <SiteFooter />
     </Router>
   );
 };

@@ -14,11 +14,9 @@ const App = () => {
   return (
     <Router>
       <SiteHeader />
-      <div className='body-content'>
-        <Switch>
-          <Route exact path="/" component={Home} />
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
       <SiteFooter />
     </Router>
   );

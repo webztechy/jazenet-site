@@ -1308,6 +1308,19 @@ body {
   min-height: 100%;
   height: max-content;
   position: relative;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none; /* Firefox 64 */
+  /* optional: show position indicator in red */
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0px; /* remove scrollbar space */
+  background: transparent; /* optional: just make scrollbar invisible */
+}
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: transparent;
 }
 
 body {
@@ -1318,29 +1331,12 @@ body {
   background-color: #000000;
   color: #ffffff;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 body::-webkit-scrollbar {
   width: 0px; /* remove scrollbar space */
   background: transparent; /* optional: just make scrollbar invisible */
 }
 body::-webkit-scrollbar-thumb {
-  background: transparent;
-}
-
-.body-content {
-  -ms-overflow-style: none; /* IE 11 */
-  scrollbar-width: none; /* Firefox 64 */
-  /* optional: show position indicator in red */
-  overflow-y: auto;
-  height: 100vh;
-  scroll-behavior: smooth;
-}
-.body-content::-webkit-scrollbar {
-  width: 0px; /* remove scrollbar space */
-  background: transparent; /* optional: just make scrollbar invisible */
-}
-.body-content::-webkit-scrollbar-thumb {
   background: transparent;
 }
 

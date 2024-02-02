@@ -22,7 +22,7 @@ const Home = () => {
     }
     
     const handleClickArrowTop = () => {
-      Utilities.scrollToSection('jazenet');
+      Utilities.scrollToSection('home');
     }
 
     useEffect( () => {
